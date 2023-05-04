@@ -19,7 +19,12 @@ MSKConfigDetector is a tool that analyzes your cluster configuration and makes r
 You can execute the script from a client machine as long as you have network connectivity with you MSK cluster. The following prerequisites are required to use this tool:
  
 
-1. Python version 3.10.6 or higher
+1. Latest version of awscli
+```
+sudo yum update awscli
+```
+
+2. Python version 3.10.6 or higher
 
 ```
 sudo yum install python3
