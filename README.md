@@ -127,7 +127,7 @@ openssl x509 -req -days 365 -in client.csr -signkey client.key -out client.crt
 4. Run the tool
 
 ```
-python mskConfigDetector.py
+python3 mskConfigDetector.py
 
 ```
 
