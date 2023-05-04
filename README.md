@@ -30,9 +30,9 @@ sudo yum update awscli
 sudo yum install python3
 ```
 
-2. Network connectivity between the client machine and MSK cluster’s VPC
-3. AWS CLI configured with an IAM user which has  [**AmazonMSKReadOnlyAccess**](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonMSKReadOnlyAccess.html) and [**CloudWatchReadOnlyAccess**](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/CloudWatchReadOnlyAccess.html) policy attached.
-4. boto3 version 1.26.86 or higher
+3. Network connectivity between the client machine and MSK cluster’s VPC
+4. AWS CLI configured with an IAM user which has  [**AmazonMSKReadOnlyAccess**](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonMSKReadOnlyAccess.html) and [**CloudWatchReadOnlyAccess**](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/CloudWatchReadOnlyAccess.html) policy attached.
+5. boto3 version 1.26.86 or higher
 
 ```
 sudo yum install python3-pip
@@ -41,13 +41,13 @@ pip3 install boto3
 
 ```
 
-5. Install kafka-python
+6. Install kafka-python
 
 ```
 pip3 install kafka-python
 ```
 
-6. Operating system - Windows, Linux, MacOS
+7. Operating system - Windows, Linux, MacOS
 
 
 
