@@ -121,3 +121,7 @@ python mskConfigDetector.py
 
 ![report](images/report.png)
 
+
+
+## Sample report
+[SampleReport](output/samplereport.txt)
