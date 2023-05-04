@@ -41,7 +41,13 @@ pip install boto3
 pip install ssl
 ```
 
-6. Operating system - Windows, Linux, MacOS
+6. Install kafka-python
+
+```
+pip install kafka-python
+```
+
+7. Operating system - Windows, Linux, MacOS
 
 
 
