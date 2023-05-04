@@ -95,7 +95,9 @@ openssl req -new -key client.key -out client.csr
 openssl x509 -req -days 365 -in client.csr -signkey client.key -out client.crt
 ```
 
-* Copy the client certificate (**client.crt**) and private key (**client.key**) to the msk-detector-tool folder.
+* Copy the client certificate (**client.crt**) and private key (**client.key**) to the amazon-msk-config-detector folder.
+
+![cert](images\cert1.png)
 
 3. Open **clusterdetails.json**. Update your **clusterarn** and **region**. For authtype choose **PLAIN** or **SASL**. Update the user name and password if your authtype is SASL or leave it to default.
 
