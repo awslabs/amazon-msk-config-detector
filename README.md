@@ -1,6 +1,6 @@
 # MSKConfigDetector
 
-MSKConfigDetector is a tool that analyzes your cluster configuration and makes recommendations based on the instance type, storage configuration and topic configuration. Using [MSK best practices guideline](https://docs.aws.amazon.com/msk/latest/developerguide/bestpractices.html), MSKDetector clearly indicates which configuration changes are necessary, taking into account factors such as instance type, local storage, tiered storage, segment size and retention period. Additionally, the tool can detect storage and partition imbalances on your cluster, and provide specific recommendations for correcting these imbalances.
+MSKConfigDetector is a tool that analyzes your Kafka cluster configuration and makes recommendations based on the instance type, storage configuration and topic configuration. Using [MSK best practices guideline](https://docs.aws.amazon.com/msk/latest/developerguide/bestpractices.html), MSKDetector clearly indicates which configuration changes are necessary, taking into account factors such as instance type, local storage, tiered storage, segment size and retention period. Additionally, the tool can detect storage and partition imbalances on your cluster, and provide specific recommendations for correcting these imbalances.
 
 ![Detectorimage](images/mskdetector.png)
 
