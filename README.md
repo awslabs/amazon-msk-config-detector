@@ -6,7 +6,7 @@ MSKConfigDetector is a tool that analyzes your cluster configuration and makes r
 
 ## How the tool works
 
-1. The MSKDetector uses the DescribeClusterV2 API of MSK to obtain the configuration details for a given cluster using its ARN. 
+1. The MSKDetector uses the [DescribeClusterV2](https://docs.aws.amazon.com/cli/latest/reference/kafka/describe-cluster-v2.html) API of MSK to obtain the configuration details for a given cluster using its ARN. 
 2. The MSKDetector uses the Kafka Admin API to obtain the configuration details for all the topics of a given cluster.
 3. Using the CloudWatch getMetricData API, the MSKDetector retrieves metrics for the cluster.
 4. The MSKDetector validates the recommended configuration for the specific cluster by comparing it with the current cluster configuration, using it’s OptimalConfigBook.
