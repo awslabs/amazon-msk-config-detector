@@ -38,7 +38,7 @@ pip install boto3
 5. install ssl
 
 ```
-pip install ssl 
+pip install ssl
 ```
 
 6. Operating system - Windows, Linux, MacOS
