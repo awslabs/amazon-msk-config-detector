@@ -50,7 +50,7 @@ pip install ssl
 6. Install kafka-python
 
 ```
-pip install kafka-python
+pip3 install kafka-python
 ```
 
 7. Operating system - Windows, Linux, MacOS
