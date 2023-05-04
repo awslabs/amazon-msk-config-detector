@@ -46,7 +46,7 @@ Broker ID: 3| Disk usage :2.307561%
 ************ Analyzing topics ************
 Total number of topics:7
 List of topic:
-['ts2-gp3', 'testCMP', '__consumer_offsets', 'testCMP1', 'tsbug', 'ts1-gp3']
+['ts2-gp3', 'testCMP', '__consumer_offsets', 'testCMP1', 'ts1-gp3']
 
 Topic Config violation for topic: ts2-gp3
 Current config= replicationfactor: 2,segment.ms:604800000,min.insync.replicas:2,segment.bytes:500000000
@@ -54,10 +54,6 @@ Recommended config= replicationfactor: 3,segment.ms:604800000,min.insync.replica
 
 Topic Config violation for topic: __consumer_offsets
 Current config= replicationfactor: 3,segment.ms:604800000,min.insync.replicas:2,segment.bytes:104857600
-Recommended config= replicationfactor: 3,segment.ms:604800000,min.insync.replicas:2,segment.bytes:134217728
-
-Topic Config violation for topic: tsbug
-Current config= replicationfactor: 2,segment.ms:604800000,min.insync.replicas:2,segment.bytes:50331648
 Recommended config= replicationfactor: 3,segment.ms:604800000,min.insync.replicas:2,segment.bytes:134217728
 
 Topic Config violation for topic: ts1-gp3
