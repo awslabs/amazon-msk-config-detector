@@ -455,7 +455,7 @@ def main():
 
 
     strReport="\n************ General configuration best practices ************" + "\n"
-    strReport=strReport +"\n1. Replica factor=1 causes offline partitions during maintanance of cluster, which prevents client to produce/consume messeages\n"
+    strReport=strReport +"\n1. Replication factor=1 causes offline partitions during maintanance of cluster, which prevents client to produce/consume messeages\n"
     strReport=strReport +"\n2. segment.ms -Wrong configuration could lead to cluster downtime. For example if segment.ms = 20000, it would causes Kafka to generate a new log segment every 20000 milliseconds instead of once every 7 days (or 604800000 ms) which is the default value. Kafka stores two memory mapped files per log segment. This configuration will generate a high number of memory mapped files and Kafka is approaching the max file limit per Linux process of 262,144.\n"
     strReport=strReport +"\n3. min.insync.replicas should be set to a value equal to or less than the replication factor. Failing to do so could increase the risk of availability loss.\n"
     strReport=strReport + "\n4. Changing max.message.bytes configuration with large number causes brokers to receive too large requests and cannot allocate the memory to read it in user space. Therefore, brokers can become unhealthy. Leave it to default.\n"
