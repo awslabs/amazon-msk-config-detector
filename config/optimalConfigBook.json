@@ -1,0 +1,216 @@
+{
+  "GP3Candidate": {
+    "kafka.m5.4xlarge": "593",
+    "kafka.m5.8xlarge": "850",
+    "kafka.m5.12xlarge": "1000",
+    "kafka.m5.16xlarge": "1000",
+    "kafka.m5.24xlarge": "1000"
+  },
+  "nontsdefault":{
+	"unclean.leader.election.enable":"false"  
+  },
+
+  "nonTS":{
+	  "kafka.t3.small":{
+		 "num.io.threads":"8",
+		 "num.network.threads":"5",
+		 "log.segment.bytes":"1073741824",
+		 "replica.lag.time.max.ms":"30000",
+		 "socket.receive.buffer.bytes":"102400",
+		 "socket.request.max.bytes": "104857600",
+		 "socket.send.buffer.bytes": "102400"
+	  },
+	  "kafka.m5.large":{
+		 "num.io.threads":"8",
+		 "num.network.threads":"5",
+		 "log.segment.bytes":"1073741824",
+		 "replica.lag.time.max.ms":"30000",
+		 "socket.receive.buffer.bytes":"102400",
+		 "socket.request.max.bytes": "104857600",
+		 "socket.send.buffer.bytes": "102400"
+	  },
+	  "kafka.m5.xlarge":{
+		 "num.io.threads":"8",
+		 "num.network.threads":"5",
+		 "log.segment.bytes":"1073741824",
+		 "replica.lag.time.max.ms":"30000",
+		 "socket.receive.buffer.bytes":"102400",
+		 "socket.request.max.bytes": "104857600",
+		 "socket.send.buffer.bytes": "102400"
+	  },
+	  "kafka.m5.2xlarge":{
+		 "num.io.threads":"8",
+		 "num.network.threads":"5",
+		 "log.segment.bytes":"1073741824",
+		 "replica.lag.time.max.ms":"30000",
+		 "socket.receive.buffer.bytes":"102400",
+		 "socket.request.max.bytes": "104857600",
+		 "socket.send.buffer.bytes": "102400"
+	  },
+	  "kafka.m5.4xlarge":{
+		 "num.io.threads":"16",
+		 "num.network.threads":"8",
+		 "log.segment.bytes":"1073741824",
+		 "replica.lag.time.max.ms":"30000",
+		 "socket.receive.buffer.bytes":"102400",
+		 "socket.request.max.bytes": "104857600",
+		 "socket.send.buffer.bytes": "102400"
+	  },
+	  "kafka.m5.8xlarge":{
+		 "num.io.threads":"32",
+		 "num.network.threads":"16",
+		 "log.segment.bytes":"1073741824",
+		 "replica.lag.time.max.ms":"30000",
+		 "socket.receive.buffer.bytes":"102400",
+		 "socket.request.max.bytes": "104857600",
+		 "socket.send.buffer.bytes": "102400"
+	  },
+	  "kafka.m5.12xlarge":{
+		 "num.io.threads":"48",
+		 "num.network.threads":"24",
+		 "log.segment.bytes":"1073741824",
+		 "replica.lag.time.max.ms":"30000",
+		 "socket.receive.buffer.bytes":"102400",
+		 "socket.request.max.bytes": "104857600",
+		 "socket.send.buffer.bytes": "102400"
+	  },
+	  "kafka.m5.16xlarge":{
+		 "num.io.threads":"64",
+		 "num.network.threads":"32",
+		 "log.segment.bytes":"1073741824",
+		 "replica.lag.time.max.ms":"30000",
+		 "socket.receive.buffer.bytes":"102400",
+		 "socket.request.max.bytes": "104857600",
+		 "socket.send.buffer.bytes": "102400"
+	  },
+	  "kafka.m5.24xlarge":{
+		 "num.io.threads":"96",
+		 "num.network.threads":"48",
+		 "log.segment.bytes":"1073741824",
+		 "replica.lag.time.max.ms":"30000",
+		 "socket.receive.buffer.bytes":"102400",
+		 "socket.request.max.bytes": "104857600",
+		 "socket.send.buffer.bytes": "102400"
+	  }
+  },
+  "TS":{
+	"kafka.m5.large":{
+		 "num.io.threads":"8",
+		 "num.network.threads":"5",
+		 "remote.log.reader.threads":"10",
+		 "log.segment.bytes":"134217728",
+		 "replica.lag.time.max.ms":"30000",
+		 "socket.receive.buffer.bytes":"102400",
+		 "socket.request.max.bytes": "104857600",
+		 "socket.send.buffer.bytes": "102400"
+	  },
+	"kafka.m5.xlarge":{
+		 "log.segment.bytes":"134217728",
+		 "num.io.threads":"8",
+		 "num.network.threads":"5",
+		 "remote.log.reader.threads":"10",
+		 "replica.lag.time.max.ms":"30000",
+		 "socket.receive.buffer.bytes":"102400",
+		 "socket.request.max.bytes": "104857600",
+		 "socket.send.buffer.bytes": "102400"
+	  },
+	"kafka.m5.2xlarge":{
+		 "num.io.threads":"8",
+		 "num.network.threads":"5",
+		 "log.segment.bytes":"134217728",
+		 "remote.log.reader.threads":"10",
+		 "replica.lag.time.max.ms":"30000",
+		 "socket.receive.buffer.bytes":"102400",
+		 "socket.request.max.bytes": "104857600",
+		 "socket.send.buffer.bytes": "102400"
+	  },
+	"kafka.m5.4xlarge":{
+		 "num.io.threads":"16",
+		 "num.network.threads":"8",
+		 "remote.log.reader.threads":"10",
+		 "log.segment.bytes":"134217728",
+		 "replica.lag.time.max.ms":"30000",
+		 "socket.receive.buffer.bytes":"102400",
+		 "socket.request.max.bytes": "104857600",
+		 "socket.send.buffer.bytes": "102400"
+	  },  
+	  "kafka.m5.8xlarge":{
+		 "num.io.threads":"32",
+		 "num.network.threads":"16",
+		 "remote.log.reader.threads":"21",
+		 "log.segment.bytes":"134217728",
+		 "replica.lag.time.max.ms":"30000",
+		 "socket.receive.buffer.bytes":"102400",
+		 "socket.request.max.bytes": "104857600",
+		 "socket.send.buffer.bytes": "102400"
+	  },  
+	  "kafka.m5.12xlarge":{
+		 "num.io.threads":"48",
+		 "num.network.threads":"24",
+		 "remote.log.reader.threads":"32",
+		 "log.segment.bytes":"134217728",
+		 "replica.lag.time.max.ms":"30000",
+		 "socket.receive.buffer.bytes":"102400",
+		 "socket.request.max.bytes": "104857600",
+		 "socket.send.buffer.bytes": "102400"
+	  },  
+	  "kafka.m5.16xlarge":{
+		 "num.io.threads":"64",
+		 "num.network.threads":"32",
+		 "remote.log.reader.threads":"42",
+		 "log.segment.bytes":"134217728",
+		 "replica.lag.time.max.ms":"30000",
+		 "socket.receive.buffer.bytes":"102400",
+		 "socket.request.max.bytes": "104857600",
+		 "socket.send.buffer.bytes": "102400"
+	  },  
+	  "kafka.m5.24xlarge":{
+		 "num.io.threads":"96",
+		 "num.network.threads":"48",
+		 "remote.log.reader.threads":"64",
+		 "log.segment.bytes":"134217728",
+		 "replica.lag.time.max.ms":"30000",
+		 "socket.receive.buffer.bytes":"102400",
+		 "socket.request.max.bytes": "104857600",
+		 "socket.send.buffer.bytes": "102400"
+	  }
+  },
+  "GP3":{
+	 "kafka.m5.4xlarge":{
+		 "num.replica.fetchers":"4"
+	  },
+	"kafka.m5.8xlarge":{
+		 "num.replica.fetchers":"8"
+	  },
+	"kafka.m5.12xlarge":{
+		 "num.replica.fetchers":"12"
+	  },
+	"kafka.m5.16xlarge":{
+		 "num.replica.fetchers":"16"
+	  },
+	"kafka.m5.24xlarge":{
+		 "num.replica.fetchers":"24"
+	  }	  
+  },
+  "partitionCount":{
+	"kafka.t3.small": "300",
+	"kafka.m5.large": "1000",
+	"kafka.m5.xlarge": "1000",
+	"kafka.m5.2xlarge": "2000",
+	"kafka.m5.4xlarge": "4000",
+    "kafka.m5.8xlarge": "4000",
+    "kafka.m5.12xlarge": "4000",
+    "kafka.m5.16xlarge": "4000",
+    "kafka.m5.24xlarge": "4000"
+  }
+  ,
+  "topicconfig":{
+	"minreplicationfactor": "3",
+	"segment.ms": "604800000",
+	"min.insync.replicas": "2",
+	"segment.bytes.noTS": "1073741824",
+	"segment.bytes.TS": "134217728",
+	"max.message.bytes":"1000000"
+	
+  }
+}
