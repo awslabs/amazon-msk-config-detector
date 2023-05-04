@@ -35,9 +35,10 @@ sudo yum install python3
 4. boto3 version 1.26.86 or higher
 
 ```
-sudo yum -y install python-pip
+sudo yum install python3-pip
 
-pip install boto3
+pip3 install boto3
+
 ```
 
 5. install ssl
