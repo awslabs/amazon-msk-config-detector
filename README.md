@@ -124,4 +124,4 @@ python mskConfigDetector.py
 
 
 ## Sample report
-[SampleReport](output/samplereport.txt)
+[Sample Report](output/reportsample.txt)
