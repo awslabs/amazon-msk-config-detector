@@ -97,17 +97,17 @@ openssl x509 -req -days 365 -in client.csr -signkey client.key -out client.crt
 
 * Copy the client certificate (**client.crt**) and private key (**client.key**) to the amazon-msk-config-detector folder.
 
-![cert](images\cert1.png)
+![cert](images/cert1.png)
 
 3. Open **clusterdetails.json**. Update your **clusterarn** and **region**. For authtype choose **PLAIN** or **SASL**. Update the user name and password if your authtype is SASL or leave it to default.
 
 **Config for SASL/SCRAM**
 
-![clusterconfig](images\clusterconfig1.png)
+![clusterconfig](images/clusterconfig1.png)
 
 **Config for plaintext**
 
-![clusterconfig](images\clusterconfig2.png)
+![clusterconfig](images/clusterconfig2.png)
 
 
 4. Run the tool
@@ -119,5 +119,5 @@ python mskdetector.py
 
 5. Check the report in output directory.
 
-![report](images\report.png)
+![report](images/report.png)
 
