@@ -65,7 +65,7 @@ pip install ssl
 8. This tool is designed to work with MSK **provisioned** clusters and supports **PlainText** and **SASL/SCRAM** authentication.
 7. Generates a report in the output directory.
 
-## How to use
+## How to use the tool
 1. Download this git repository on a client machine that has network connectivity with the VPC of the MSK cluster.
 2. Follow below steps if you are using SASL/SCRAM authentication for MSK
 * Install [Openssl](https://www.openssl.org/) 
