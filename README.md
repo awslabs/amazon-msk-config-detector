@@ -85,7 +85,7 @@ sudo yum install openssl
 openssl genrsa -out client.key 2048
 ```
 
-* Generate a Certificate Signing Request (CSR) for the client. You'll be prompted to provide some information, such as the Common Name (CN), which should match the fully qualified domain name (FQDN) or IP address of the client:
+* Generate a Certificate Signing Request (CSR) for the client. You'll be prompted to provide some information, such as the Common Name (CN), which should match the fully qualified domain name (FQDN) or IP address of the client. For **challenge password** - leave it empty:
 
 ```
 openssl req -new -key client.key -out client.csr
