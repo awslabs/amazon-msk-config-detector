@@ -99,7 +99,13 @@ openssl x509 -req -days 365 -in client.csr -signkey client.key -out client.crt
 
 3. Open **clusterdetails.json**. Update your **clusterarn** and **region**. For authtype choose **PLAIN** or **SASL**. Update the user name and password if your authtype is SASL or leave it to default.
 
-![clusterconfig](images\clusterconfig.png)
+**Config for SASL/SCRAM**
+
+![clusterconfig](images\clusterconfig1.png)
+
+**Config for plaintext**
+
+![clusterconfig](images\clusterconfig2.png)
 
 
 4. Run the tool
