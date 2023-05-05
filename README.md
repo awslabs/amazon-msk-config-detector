@@ -31,7 +31,7 @@ sudo yum install python3
 ```
 
 3. Network connectivity between the client machine and MSK cluster’s VPC
-4. AWS CLI configured with an IAM user which has  [**AmazonMSKReadOnlyAccess**](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonMSKReadOnlyAccess.html) and [**CloudWatchReadOnlyAccess**](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/CloudWatchReadOnlyAccess.html) policy attached.
+4. AWS CLI configured with an IAM user or using [instance profiles](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_switch-role-ec2_instance-profiles.html) which has  [**AmazonMSKReadOnlyAccess**](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonMSKReadOnlyAccess.html) and [**CloudWatchReadOnlyAccess**](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/CloudWatchReadOnlyAccess.html) policy attached.
 5. boto3 version 1.26.86 or higher
 
 ```
