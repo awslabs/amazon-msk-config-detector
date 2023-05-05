@@ -70,7 +70,7 @@ pip3 install kafka-python
     4. segment.bytes
 5. Provides recommended per broker partition count and current partition count per broker to identify any partition imbalance.
 6. Provides information about the disk usage per broker to identify any disk usage imbalance.
-8. This tool is designed to work with MSK **provisioned** clusters and supports **PlainText** and **SASL/SCRAM** authentication.
+8. This tool is designed to work with MSK [**provisioned**](https://docs.aws.amazon.com/msk/latest/developerguide/msk-create-cluster.html) clusters and supports **PlainText** and **SASL/SCRAM** [authentication](https://docs.aws.amazon.com/msk/latest/developerguide/kafka_apis_iam.html).
 7. Generates a report in the output directory.
 
 ## How to use the tool
