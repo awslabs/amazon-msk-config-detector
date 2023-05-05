@@ -9,7 +9,7 @@ MSKConfigDetector is a tool that analyzes your Kafka cluster configuration and m
 1. The tool uses the [DescribeClusterV2](https://docs.aws.amazon.com/cli/latest/reference/kafka/describe-cluster-v2.html) API of Amazon MSK to obtain the configuration details for a given cluster using its ARN. 
 2. The tool uses the Kafka Admin API to obtain the configuration details for all the topics of a given cluster.
 3. Using the Amazon CloudWatch [getMetricData](https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API_GetMetricData.html) API, the tool retrieves metrics for the cluster.
-4. The toll validates the recommended configuration for the specific cluster by comparing it with the current cluster configuration, using it’s OptimalConfigBook.
+4. The tool validates the recommended configuration for the specific cluster by comparing it with the current cluster configuration, using it’s OptimalConfigBook.
 5. Based on the cluster's current configuration and the optimal configuration, the tool generates a best-practice recommendation report for the specific cluster.
 
 
