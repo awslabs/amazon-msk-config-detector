@@ -6,9 +6,9 @@ MSKConfigDetector is a tool that analyzes your Kafka cluster configuration and m
 
 ## How the tool works
 
-1. The tool uses the [DescribeClusterV2](https://docs.aws.amazon.com/cli/latest/reference/kafka/describe-cluster-v2.html) API of MSK to obtain the configuration details for a given cluster using its ARN. 
+1. The tool uses the [DescribeClusterV2](https://docs.aws.amazon.com/cli/latest/reference/kafka/describe-cluster-v2.html) API of Amazon MSK to obtain the configuration details for a given cluster using its ARN. 
 2. The tool uses the Kafka Admin API to obtain the configuration details for all the topics of a given cluster.
-3. Using the CloudWatch getMetricData API, the tool retrieves metrics for the cluster.
+3. Using the Amazon CloudWatch [getMetricData](https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API_GetMetricData.html) API, the tool retrieves metrics for the cluster.
 4. The toll validates the recommended configuration for the specific cluster by comparing it with the current cluster configuration, using it’s OptimalConfigBook.
 5. Based on the cluster's current configuration and the optimal configuration, the tool generates a best-practice recommendation report for the specific cluster.
 
@@ -16,7 +16,7 @@ MSKConfigDetector is a tool that analyzes your Kafka cluster configuration and m
 
 ## Prerequisite
 
-You can execute the script from a client machine as long as you have network connectivity with you MSK cluster. The following prerequisites are required to use this tool:
+You can execute the script from a client machine as long as you have network connectivity with you Amazon MSK cluster. The following prerequisites are required to use this tool:
  
 
 1. Latest version of awscli
@@ -30,7 +30,7 @@ sudo yum update awscli
 sudo yum install python3
 ```
 
-3. Network connectivity between the client machine and MSK cluster’s VPC
+3. Network connectivity between the client machine and Amazon MSK cluster’s VPC
 4. AWS CLI configured with an IAM user or using [instance profiles](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_switch-role-ec2_instance-profiles.html) which has  [**AmazonMSKReadOnlyAccess**](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonMSKReadOnlyAccess.html) and [**CloudWatchReadOnlyAccess**](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/CloudWatchReadOnlyAccess.html) policy attached.
 5. boto3 version 1.26.86 or higher
 
@@ -70,12 +70,12 @@ pip3 install kafka-python
     4. segment.bytes
 5. Provides recommended per broker partition count and current partition count per broker to identify any partition imbalance.
 6. Provides information about the disk usage per broker to identify any disk usage imbalance.
-8. This tool is designed to work with MSK [**provisioned**](https://docs.aws.amazon.com/msk/latest/developerguide/msk-create-cluster.html) clusters and supports **PlainText** and **SASL/SCRAM** [authentication](https://docs.aws.amazon.com/msk/latest/developerguide/kafka_apis_iam.html).
+8. This tool is designed to work with Amazon MSK [**provisioned**](https://docs.aws.amazon.com/msk/latest/developerguide/msk-create-cluster.html) clusters and supports **PlainText** and **SASL/SCRAM** [authentication](https://docs.aws.amazon.com/msk/latest/developerguide/kafka_apis_iam.html).
 7. Generates a report in the output directory.
 
 ## How to use the tool
-1. Download this git repository on a client machine that has network connectivity with the VPC of the MSK cluster.
-2. **Follow below steps if you are using SASL/SCRAM authentication for MSK**
+1. Download this git repository on a client machine that has network connectivity with the VPC of the Amazon MSK cluster.
+2. **Follow below steps if you are using SASL/SCRAM authentication for Amazon MSK**
 * Install [Openssl](https://www.openssl.org/) 
 
 * For Windows: download and install Openssl on your client machine: [Openssl](https://wiki.openssl.org/index.php/Binaries).
