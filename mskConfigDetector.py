@@ -305,16 +305,20 @@ def describeTopic(bootstrapservers,topicname):
 def main():
     #start of storage
     print ("Generating report for " + strClusterarn)
-    storageinfo=response['ClusterInfo']['Provisioned']['BrokerNodeGroupInfo']['StorageInfo']['EbsStorageInfo']['ProvisionedThroughput']
     strStorageMode=response['ClusterInfo']['Provisioned']['StorageMode']
     strClientSubnets=response['ClusterInfo']['Provisioned']['BrokerNodeGroupInfo']['ClientSubnets']
     intNumbAZ=findNumAZ (strClientSubnets)
     strNumberOfBrokerNodes=response['ClusterInfo']['Provisioned']['NumberOfBrokerNodes']
     strClusterName=response['ClusterInfo']['ClusterName']
 
-    strProvisionedThroughput=storageinfo['Enabled']
-    if strProvisionedThroughput==True:
-        strVolumeThroughput=storageinfo['VolumeThroughput']
+    strProvisionedThroughput=False
+
+    # Provisioned storage throughput is optional and can only be enabled using kafka.m5.4xlarge or a larger broker type
+    if 'ProvisionedThroughput' in response['ClusterInfo']['Provisioned']['BrokerNodeGroupInfo']['StorageInfo']['EbsStorageInfo']:
+        storageinfo=response['ClusterInfo']['Provisioned']['BrokerNodeGroupInfo']['StorageInfo']['EbsStorageInfo']['ProvisionedThroughput']
+        strProvisionedThroughput=storageinfo['Enabled']
+        if strProvisionedThroughput==True:
+            strVolumeThroughput=storageinfo['VolumeThroughput']
 
     strInstanceType=response['ClusterInfo']['Provisioned']['BrokerNodeGroupInfo']['InstanceType']
     
