@@ -305,7 +305,10 @@ def describeTopic(bootstrapservers,topicname):
 def main():
     #start of storage
     print ("Generating report for " + strClusterarn)
-    strStorageMode=response['ClusterInfo']['Provisioned']['StorageMode']
+    if 'StorageMode' in response['ClusterInfo']['Provisioned']['BrokerNodeGroupInfo']:
+        strStorageMode=response['ClusterInfo']['Provisioned']['BrokerNodeGroupInfo']['StorageMode']
+    else:
+        strStorageMode="LOCAL"
     strClientSubnets=response['ClusterInfo']['Provisioned']['BrokerNodeGroupInfo']['ClientSubnets']
     intNumbAZ=findNumAZ (strClientSubnets)
     strNumberOfBrokerNodes=response['ClusterInfo']['Provisioned']['NumberOfBrokerNodes']
